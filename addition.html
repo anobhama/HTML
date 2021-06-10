@@ -1,0 +1,34 @@
+<html>
+<head>
+<title></title>
+<script language="javascript">
+function addNumbers()
+{
+var val1 = parseInt(document.getElementById("num1").value);
+var val2 = parseInt(document.getElementById("num2").value);
+var ansD = document.getElementById("answer");
+ansD.value = val1 + val2;
+}
+</script>
+<style type="text/css">
+div {
+border: 1px solid black;
+height: 35%;
+width: 20%;
+}
+</style>
+</head>
+<body>
+<div><br>
+<label> &nbsp;&nbsp; 1st Number :</label>
+<input type="text" name="num1" id="num1" value=""/><br><br>
+<label>&nbsp;&nbsp; 2nd Number:</label>
+<input type="text" name="num2" id="num2" value=""/><br><br>
+&nbsp;&nbsp;<input type="button" name="Addition" value="Addition"
+onclick="javascript:addNumbers()"/><br><br>
+<label>&nbsp;&nbsp;The Result Is:</label><br>
+&nbsp;&nbsp;<input type="text" id="answer" name="answer" value=""/><br>
+<br>
+</div>
+</body>
+</html>
